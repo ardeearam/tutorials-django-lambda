@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
   '127.0.0.1',
+  'tutorial-django-lambda.stg.klaudsol.com',
   '7pnbbzanzb.execute-api.us-east-1.amazonaws.com'
 ]
 

@@ -32,7 +32,14 @@ zappa deploy dev
 zappa update dev
 
 #Optional: fancy domain name
-zappa certify 
+#Prerequisites - you have a public Route53 hosted zone
+# zappa_settings.json 
+# - Add "domain" entry
+# - Add "certificate_arn" entry - See AWS Certificate Manager to get the CRN
+zappa certify
+
+# app/settings - Add domain to ALLOWED_HOSTS. 
+zappa update dev    #deploy the change in ALLOWED_HOSTS
 ```
 
 
