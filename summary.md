@@ -20,8 +20,15 @@ zappa init
 aws configure sso
 
 zappa deploy dev   
-# Add generated domain to app/settings.py
+
+#Code modifications:
+# app/settings.py 
+#  - Add generated domain to ALLOWED_HOSTS
+#  - Add 'app' to INSTALLED_APPS
+# app/views.py - Create
 # Add path('', include('app.urls')),  to app/urls.py
+# Add app/templates/app/home.html for added oomph. Update app/views.py accordingly
+
 zappa update dev
 
 #Optional: fancy domain name

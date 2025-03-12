@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-9a+xez=csrkapgx=$bzio%zy-lq42d*fmw#_xe$uggd1pss#ma
 DEBUG = True
 
 ALLOWED_HOSTS = [
+  '127.0.0.1',
   '7pnbbzanzb.execute-api.us-east-1.amazonaws.com'
 ]
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app'
 ]
 
 MIDDLEWARE = [
