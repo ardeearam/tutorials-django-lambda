@@ -27,7 +27,7 @@ zappa deploy dev
 #  - Add 'app' to INSTALLED_APPS
 # app/views.py - Create
 # Add path('', include('app.urls')),  to app/urls.py
-# Add app/templates/app/home.html for added oomph. Update app/views.py accordingly
+# Add app/templates/app/index.html for added oomph. Update app/views.py accordingly
 
 zappa update dev
 
