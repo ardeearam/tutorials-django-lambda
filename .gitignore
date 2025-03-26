@@ -3,3 +3,4 @@ venv/
 zappa_settings.deploy.json
 zappa_settings.json
 summary.md
+.ipynb_checkpoints/
